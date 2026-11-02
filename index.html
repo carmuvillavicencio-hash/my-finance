@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>My Finance</title>
+<meta name="description" content="Registrá ingresos y gastos, y mirá en qué se va tu plata.">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#F4F1EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111613" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="My Finance">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<!--SPLASH-->
+<link rel="apple-touch-startup-image" media="(device-width:320px) and (device-height:568px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="icons/splash-640x1136.png">
+<link rel="apple-touch-startup-image" media="(device-width:375px) and (device-height:667px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="icons/splash-750x1334.png">
+<link rel="apple-touch-startup-image" media="(device-width:414px) and (device-height:736px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="icons/splash-1242x2208.png">
+<link rel="apple-touch-startup-image" media="(device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="icons/splash-1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="icons/splash-828x1792.png">
+<link rel="apple-touch-startup-image" media="(device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="icons/splash-1242x2688.png">
+<link rel="apple-touch-startup-image" media="(device-width:390px) and (device-height:844px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="icons/splash-1170x2532.png">
+<link rel="apple-touch-startup-image" media="(device-width:428px) and (device-height:926px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="icons/splash-1284x2778.png">
+<link rel="apple-touch-startup-image" media="(device-width:393px) and (device-height:852px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="icons/splash-1179x2556.png">
+<link rel="apple-touch-startup-image" media="(device-width:430px) and (device-height:932px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="icons/splash-1290x2796.png">
+<link rel="apple-touch-startup-image" media="(device-width:402px) and (device-height:874px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="icons/splash-1206x2622.png">
+<link rel="apple-touch-startup-image" media="(device-width:440px) and (device-height:956px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="icons/splash-1320x2868.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="splash" aria-hidden="true"><img src="icons/icon-192.png" alt="" width="84" height="84"><strong>My Finance</strong></div>
+<div id="app">
+  <nav id="nav" aria-label="Secciones"></nav>
+  <main id="main"></main>
+</div>
+<div id="sheet-layer" hidden><div class="scrim" data-act="close-sheet"></div><section id="sheet" role="dialog" aria-modal="true"></section></div>
+<div id="confirm-layer" hidden><div class="scrim"></div><section id="confirm" role="alertdialog" aria-modal="true"></section></div>
+<div id="toast" role="status" hidden></div>
+<div id="tip" hidden></div>
+<input type="file" id="import-file" accept=".csv,text/csv" hidden>
+<script src="config.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
